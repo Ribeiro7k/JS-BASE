@@ -1,1 +1,53 @@
- <!-- 1ª Digitação (Resolva aqui o exercício) -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Contador de Cliques</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        p {
+            font-size: 20px;
+            padding: 15px;
+            width: 200px;
+            margin: 20px auto;
+            color: white;
+            background-color: green;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <button onclick="contarClique()">Clique aqui</button>
+    <p id="contador">Cliques: 0</p>
+
+    <script>
+        let contador = 0;
+        
+        function contarClique() {
+            contador++;
+            
+            const paragrafo = document.getElementById("contador");
+            paragrafo.textContent = "Cliques: " + contador;
+
+            if (contador % 2 === 0) {
+                paragrafo.style.backgroundColor = "green";
+            } else {
+                paragrafo.style.backgroundColor = "red";
+            }
+        }
+    </script>
+
+</body>
+</html>
