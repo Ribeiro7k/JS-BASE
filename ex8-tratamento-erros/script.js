@@ -34,4 +34,4 @@ document.getElementById("calculate").addEventListener("click", function () {
     // Bloco finally: executado sempre, independentemente de erro
     console.log("Operação concluída."); // Mensagem de log no console
   }
-// });
+ });
